@@ -157,9 +157,7 @@ class SumoLogic(object):
 
         params = {'query': [{"query":query, "rowId":"A"}],
                   'startTime': fromTime,
-                  # 'startTime': millisectimestamp(fromTime),
                   'endTime': toTime,
-                  # 'endTime': millisectimestamp(toTime),
                   'requestedDataPoints': requestedDataPoints,
                   'maxDataPoints': maxDataPoints}
         r = self.post('/metrics/results', params)
